@@ -138,6 +138,9 @@
   color: #000000;
 }
 
+.note_box {
+  margin-top: 130px;
+}
 .note_box .note .note_up_p .note_p_one {
   font-weight: 400;
   font-size: 33px;
