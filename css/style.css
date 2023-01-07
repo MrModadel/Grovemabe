@@ -17,6 +17,16 @@
   justify-content: space-between;
   align-items: center;
 }
+.header_box .header .menu_head {
+  display: none;
+  flex-direction: column;
+  gap: 2.5px;
+}
+.header_box .header .menu_head span {
+  width: 16px;
+  height: 2.5px;
+  background-color: #000;
+}
 .header_box .header .nav {
   display: flex;
   align-items: center;
@@ -196,5 +206,98 @@
   }
   .note_item img {
     width: 270px;
+  }
+}
+@media (max-width: 1200px) {
+  .note_box .note .note_down {
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+  }
+  .note_item img {
+    width: 220px;
+  }
+  .about_box .about_down {
+    grid-template-columns: repeat(2, 458px);
+  }
+}
+@media (max-width: 992px) {
+  .note_box .note .note_down {
+    display: grid;
+    grid-template-columns: repeat(4, 175px);
+    gap: 12px;
+  }
+  .note_item img {
+    width: 175px;
+  }
+  .about_box .about_down {
+    grid-template-columns: repeat(2, 358px);
+    gap: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .note_box .note .note_down {
+    display: grid;
+    grid-template-columns: repeat(2, 260px);
+    gap: 12px;
+  }
+  .header_box .header {
+    padding: 30px 5px;
+  }
+  .note_item img {
+    width: 260px;
+  }
+  .about_box .about_down {
+    grid-template-columns: repeat(2, 258px);
+    gap: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .note_box .note .note_down {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 12px;
+  }
+  .header_box .header .menu_head {
+    display: flex;
+  }
+  .header_box .header .nav {
+    display: none;
+  }
+  .header_box .header {
+    padding: 30px 5px;
+  }
+  .note_item img {
+    width: 200px;
+  }
+  .about_box .about_down {
+    grid-template-columns: repeat(2, 208px);
+    gap: 12px;
+  }
+  .thedesk_box .thedesk {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 448px) {
+  .about_box .about_down {
+    grid-template-columns: repeat(1, 260px);
+    gap: 25px 12px;
+  }
+  .header_box .header {
+    padding: 16px 5px;
+  }
+  .header img {
+    width: 130px;
+    height: 11px;
+  }
+  .header_box .header .nav_one a {
+    font-size: 10px;
+  }
+  .note_box .note .note_down {
+    display: grid;
+    grid-template-columns: repeat(2, 125px);
+    gap: 10px;
+  }
+  .note_item img {
+    width: 125px;
   }
 }
