@@ -165,6 +165,7 @@
 
 .note_box {
     margin-top: 130px;
+
     .note {
         .note_up {
             &_p {
@@ -208,8 +209,6 @@
             margin-top: 24px;
 
             .note_item {
-                img {}
-
                 .note_p_tre {
                     font-weight: 400;
                     font-size: 13px;
@@ -226,3 +225,5 @@
         }
     }
 }
+
+@import "media"

@@ -185,3 +185,16 @@
   font-size: 12px;
   color: #A0A0A0;
 }
+
+@media (max-width: 1375px) {
+  .about_box .about_down {
+    grid-template-columns: repeat(2, 528px);
+  }
+  .note_box .note .note_down {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+  }
+  .note_item img {
+    width: 270px;
+  }
+}
